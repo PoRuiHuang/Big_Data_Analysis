@@ -187,7 +187,7 @@ for i in range(len(key)):
 				excel_out[key[i]][j].append(df[key[i]][w])
 				excel_out[key[i]][j].append(j+1)
 
-writer = pd.ExcelWriter('hw1_result.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter('result.xlsx', engine='xlsxwriter')
 
 for i in range(len(key)):
 	df[i] = pd.DataFrame(excel_out[key[i]])
